@@ -12,7 +12,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Version](https://img.shields.io/badge/version-0.3.3-black.svg)]()
+[![Version](https://img.shields.io/badge/version-0.3.4-black.svg)]()
 
 **标品/非标品分治 · 词根六分类 · 品牌双分类 · PPC 四象限 · 数据源无关 · 永不停摆**
 
@@ -25,6 +25,9 @@
 ## 项目简介
 
 由 **buluslan（公众号:新西楼.AI）** 研发的亚马逊关键词库搭建 + 打法分析 Skill。你输入**竞品 ASIN**（新品建库）、**本品 ASIN**（老品诊断）、**单个竞品 ASIN**（竞品拆解），或**一份关键词表**（词表深加工），Skill 自动反查出词 → 标品/非标品判别 → 词根六分类，把几百个关键词变成一份可执行作战图——**每个词都带打法（主攻 / 截流 / 否定）**，区别于一次性关键词报告的数据罗列。数据源无关：没有数据源时上传词表照样跑。
+
+> [!TIP]
+> **更多跨境电商 AI 实战内容，请关注公众号「新西楼.AI」**
 
 一个 **Agent 通用** 的 Skill：输入 ASIN 或关键词表，输出带打法决策的作战图——不止给数据，给打法。
 
@@ -156,6 +159,20 @@ ASIN 反查需环境有数据源工具（适配器自动探测）；产物落盘
 </table>
 </div>
 
+## 🏠 交流社区
+
+<div align="center">
+
+🎯 **更多 AI 实战教程和专属福利尽在我们「MBG 跨境AI实战圈」,已有 50+ 跨境大卖、AI 专家热聊中**
+
+—— 欢迎跨境电商从业者加入我们,一起探索 AI+商业的最佳实践和真实边界,跑通【跨境AI】的从 0 到 1,打败你的同事,干掉你的老板。
+
+**社区介绍:[mp.weixin.qq.com/s/dOz4fLmRnaFR7sD_TQm00Q](https://mp.weixin.qq.com/s/dOz4fLmRnaFR7sD_TQm00Q)**
+
+<img width="1125" height="618" alt="image" src="https://github.com/user-attachments/assets/20f47cd6-e33c-4f3e-9362-3846c11135fd" />
+
+</div>
+
 ## 📁 结构
 
 ```
@@ -177,20 +194,6 @@ amazon-keyword-strategy/
 ├── evals/                    # 测试用例
 └── output/                   # 每次运行的作战图落盘
 ```
-
-## 🏠 交流社区
-
-<div align="center">
-
-🎯 **更多 AI 实战教程和专属福利尽在我们「MBG 跨境AI实战圈」,已有 50+ 跨境大卖、AI 专家热聊中**
-
-—— 欢迎跨境电商从业者加入我们,一起探索 AI+商业的最佳实践和真实边界,跑通【跨境AI】的从 0 到 1,打败你的同事,干掉你的老板。
-
-**社区介绍:[mp.weixin.qq.com/s/dOz4fLmRnaFR7sD_TQm00Q](https://mp.weixin.qq.com/s/dOz4fLmRnaFR7sD_TQm00Q)**
-
-<img width="1125" height="618" alt="image" src="https://github.com/user-attachments/assets/20f47cd6-e33c-4f3e-9362-3846c11135fd" />
-
-</div>
 
 ## 📜 License
 
