@@ -4,8 +4,8 @@
     {
       "id": 1,
       "name": "sif-xlsx-标品作战图",
-      "prompt": "我有一个含占位率/相关性列的关键词 xlsx（Apple EarPods B0D7FVQ1ZB 的调研导出），帮我做成标品作战图。文件路径：项目中心/数据接入/SIF/实测样本/ 下的 xlsx。",
-      "expected_output": "解析 xlsx 17 列 → 标品判别（出单词集中度）→ 标品作战图（精准词表 + 否定词表 + PPC 策略），落盘 output/B0D7FVQ1ZB_日期/ 三件套",
+      "prompt": "我有一个含占位率/相关性列的关键词 xlsx（Apple EarPods B08N5WRQ1Y 的调研导出），帮我做成标品作战图。文件路径：项目中心/数据接入/SIF/实测样本/ 下的 xlsx。",
+      "expected_output": "解析 xlsx 17 列 → 标品判别（出单词集中度）→ 标品作战图（精准词表 + 否定词表 + PPC 策略），落盘 output/B08N5WRQ1Y_日期/ 三件套",
       "files": [],
       "expectations": [
         "输出作战图三件套（xlsx + md + json）",
@@ -32,7 +32,7 @@
     {
       "id": 3,
       "name": "asin-mcp反查出词",
-      "prompt": "帮我搭 B0D7FVQ1ZB（Apple EarPods）的关键词库，做打法分析。",
+      "prompt": "帮我搭 B08N5WRQ1Y（Apple EarPods）的关键词库，做打法分析。",
       "expected_output": "探测可用数据源 → MCP 反查出词 → 标品判别 → 作战图。若无 MCP 提示上传词表",
       "files": [],
       "expectations": [

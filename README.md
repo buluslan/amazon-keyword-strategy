@@ -12,7 +12,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Version](https://img.shields.io/badge/version-0.3.2-black.svg)]()
+[![Version](https://img.shields.io/badge/version-0.3.3-black.svg)]()
 
 **标品/非标品分治 · 词根六分类 · 品牌双分类 · PPC 四象限 · 数据源无关 · 永不停摆**
 
@@ -54,7 +54,7 @@
 **说一句就能触发**：
 
 ```
-帮我搭 B0D7FVQ1ZB 这个 ASIN 的关键词库
+帮我搭 B08N5WRQ1Y 这个 ASIN 的关键词库
 ```
 ```
 这 800 个词帮我分下类，哪些该否定
@@ -175,7 +175,6 @@ amazon-keyword-strategy/
 │   ├── word_frequency.py     # 词频统计（词根分类辅助）
 │   └── validate_keywords.py  # 词库完整性校验
 ├── evals/                    # 测试用例
-├── examples/                 # 示范产出
 └── output/                   # 每次运行的作战图落盘
 ```
 

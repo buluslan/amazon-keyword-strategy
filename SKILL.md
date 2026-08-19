@@ -15,7 +15,7 @@ description: >-
 license: MIT
 metadata:
   category: amazon-selling
-  version: 0.3.2
+  version: 0.3.3
 ---
 
 # Amazon Keyword Strategy
