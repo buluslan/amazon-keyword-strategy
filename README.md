@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- <img src="assets/banner.png" alt="amazon-keyword-strategy" width="100%"> -->
+<img src="assets/banner.png" alt="amazon-keyword-strategy" width="100%">
 
 # 🎯 amazon-keyword-strategy
 
@@ -12,7 +12,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Version](https://img.shields.io/badge/version-0.3.1-black.svg)]()
+[![Version](https://img.shields.io/badge/version-0.3.2-black.svg)]()
 
 **标品/非标品分治 · 词根六分类 · 品牌双分类 · PPC 四象限 · 数据源无关 · 永不停摆**
 
@@ -127,6 +127,34 @@ ASIN 反查需环境有数据源工具（适配器自动探测）；产物落盘
 - 有数据源工具 → 自动反查拉词 + 填充增强字段
 - 没有 → 提示上传词表，**绝不脑补关键词**
 - 字段缺失 → 降级跑基础层，缺失标 `[缺失]`，未实测标 `⏳`
+
+## 🎁 接入福利
+
+接入数据源工具时，用以下 buluslan（公众号:新西楼.AI）专属优惠码享折扣（下单时在「折扣券」处粘贴对应码）：
+
+| 工具 | 优惠码 | 折扣 | 购买链接 |
+|------|--------|------|----------|
+| 卖家精灵 · MCP | `XXL` | 9 折 | [open.sellersprite.com/pricing/mcp](https://open.sellersprite.com/pricing/mcp) |
+| 卖家精灵 · 会员 | `XXL90`（包月）/ `XXL72`（单人包年）/ `XXL78`（标准/高级/VIP 包年） | 见官网对应套餐 | [sellersprite.com/cn/price](https://www.sellersprite.com/cn/price) |
+| SIF · 会员 | `MBGAI` | 新购/增购/升级 88 折，续费 86 折 | [sif.com](http://www.sif.com/) |
+| SIF · MCP | `MBGAI` | 88 折 | [sif.com](http://www.sif.com/) |
+
+> 本 skill 与两家工具的数据都打通：**SIF 导出的关键词表（xlsx）可直接导入**（「词表深加工」场景，含占位率/相关性列自动识别）；**卖家精灵环境配了 MCP 时适配器自动探测反查**（「新品建库 / 老品诊断 / 竞品拆解」场景）。
+
+<div align="center">
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/c46f6725-4ebd-49a0-a6be-a4fc910465be" alt="卖家精灵优惠" width="240"></td>
+    <td><img src="assets/sif-membership.png" alt="SIF 会员优惠" width="240"></td>
+    <td><img src="assets/sif-mcp.png" alt="SIF MCP 优惠" width="240"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>卖家精灵</b></td>
+    <td align="center"><b>SIF 会员</b></td>
+    <td align="center"><b>SIF MCP</b></td>
+  </tr>
+</table>
+</div>
 
 ## 📁 结构
 
