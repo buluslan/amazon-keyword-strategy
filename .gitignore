@@ -1,0 +1,11 @@
+# 用户实际产出（每次跑不同，作战图/词表），不进 git；保留 .gitkeep 占位
+output/*
+!output/.gitkeep
+
+# 动态工作流构建期中间产物（evals 运行、审计草稿等）
+*-workspace/
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store

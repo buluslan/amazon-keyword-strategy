@@ -1,0 +1,48 @@
+{
+  "skill_name": "amazon-keyword-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "name": "sif-xlsx-标品作战图",
+      "prompt": "我有一个含占位率/相关性列的关键词 xlsx（Apple EarPods B08N5WRQ1Y 的调研导出），帮我做成标品作战图。文件路径：项目中心/数据接入/SIF/实测样本/ 下的 xlsx。",
+      "expected_output": "解析 xlsx 17 列 → 标品判别（出单词集中度）→ 标品作战图（精准词表 + 否定词表 + PPC 策略），落盘 output/B08N5WRQ1Y_日期/ 三件套",
+      "files": [],
+      "expectations": [
+        "输出作战图三件套（xlsx + md + json）",
+        "标品判别基于出单词集中度（转化数据），不是搜索量分布",
+        "词根六分类正确（headphones/wired/earbuds=共性，sony/skullcandy=品牌竞品截流，school/kids=受众，case=否定，接口不匹配的 adapter/converter/cable 一类=否定，示例词非预置清单仍逐一甄别；本品接口按词库词频推断、不确定时标⏳[待确认]，非本品接口词族降观察而非武断否定）。apple/iphone 品牌词处理随 Step 0 品牌归属确认结果分流：用户确认本品品牌→主攻非截流；第三方兼容款→兼容生态品牌·默认截流+控预算+独立广告组（转化显著高于均值⏳可升主攻）；纯竞品品牌→截流",
+        "PPC 策略按 ppc_quadrant 分组",
+        "字段缺失标 [缺失]，不脑补数字",
+        "作战图含词根汇总（xlsx 词根汇总 sheet 或 json root_summary），否定词表含所属否定词根列且同族词优先词组否定",
+        "词根汇总含机会分三列（volume_share/comp_rank_pct/opp_score），全部本表内相对口径无绝对阈值——同一词表重排输入行后机会分排序不变；md 含「属性机会 Top」节",
+        "含「广告结构建议」（xlsx sheet 或 md 节）：六组分组卡片（品牌防御/核心攻坚/精准长尾/竞品截流/场景拓展/否定清单），各主攻组词数总和+未分组数=精准词表词数；竞价倾向只出现档位值（高/中高/中/低），无任何数字预算拆解"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "纯关键词降级不停摆",
+      "prompt": "我有一批关键词想做打法分析：wireless earbuds, bluetooth headphones, apple earpods, earbuds case, usb c adapter, kids headphones, wired earbuds for school, iphone earphones。没有搜索量和竞争数据，能做吗？",
+      "expected_output": "基础作战图（词根分类 + 匹配建议 + 否定词 + 阶段性标注），增强层（ABA层级/竞争强度/PPC策略）标 [缺失]，不停摆",
+      "files": [],
+      "expectations": [
+        "基础层跑通（词根分类 + 匹配建议 + 否定词）",
+        "增强层字段标 [缺失]，不脑补数字",
+        "usb c adapter / earbuds case 识别为否定词（配件意图）",
+        "不因缺数据拒绝执行"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "asin-mcp反查出词",
+      "prompt": "帮我搭 B08N5WRQ1Y（Apple EarPods）的关键词库，做打法分析。",
+      "expected_output": "探测可用数据源 → MCP 反查出词 → 标品判别 → 作战图。若无 MCP 提示上传词表",
+      "files": [],
+      "expectations": [
+        "尝试探测/调用可用数据源反查",
+        "数据源不可用时提示上传词表（不脑补词）",
+        "出词后走标品/非标品判别 + 作战图",
+        "作战图落盘 output/"
+      ]
+    }
+  ]
+}
